@@ -67,6 +67,17 @@ for book_link in df['book_link']:
     # get review count
     review_count = int(booksoup.find_all('meta', itemprop="reviewCount")[0]['content'])
     review_count
+    
+    # get genres list
+    genre = booksoup.find_all('div', class_="elementList ")
+    genre1 = genre[0].text.strip().split('\n')[-4].strip()
+    genre2 = genre[1].text.strip().split('\n')[-4].strip()
+    genre3 = genre[2].text.strip().split('\n')[-4].strip()
+    genre4 = genre[3].text.strip().split('\n')[-4].strip()
+    genre1,genre2,genre3,genre4
+    
+    genre5 = booksoup.find_all('div', class_="elementList elementListLast")[0].text.strip().split('\n')[-4].strip()
+    genre5
 
 
     
