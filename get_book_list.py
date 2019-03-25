@@ -79,5 +79,11 @@ for book_link in df['book_link']:
     genre5 = booksoup.find_all('div', class_="elementList elementListLast")[0].text.strip().split('\n')[-4].strip()
     genre5
 
-
+# get 5 reviews
+review = []
+for i in range(5):
+    path = booksoup.find_all('div', class_="reviewText stacked")[i]
+    anchors = path.find_all('span', style="display:none")[-1]
+    review.append(anchors.text.replace("\\", "").replace("\n", ""))
+review
     
