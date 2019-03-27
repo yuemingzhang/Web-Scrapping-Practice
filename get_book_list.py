@@ -87,3 +87,7 @@ for i in range(5):
     review.append(anchors.text.replace("\\", "").replace("\n", ""))
 review
     
+# year published
+path = booksoup.find('div', id_="details")
+anchors = path.find_all('div', class_="row")
+anchors
