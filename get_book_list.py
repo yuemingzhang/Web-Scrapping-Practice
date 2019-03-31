@@ -92,3 +92,5 @@ path = booksoup.find('div', id_="details")
 anchors = path.find_all('div', class_="row")
 
 # get the price of the book
+
+#
