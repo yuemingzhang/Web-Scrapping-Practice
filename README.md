@@ -14,3 +14,7 @@ Save them in a dataframe.
 With the book links saved in the dataframe, open each html and save in local folder.
 Extrat these information from each book's html page: overall rating, number of ratings, number of reviews, abstract, price, number of pages, first published time, edition language, genres, top 5 review texts.
 
+#### Step 3:
+
+Data wrangling
+
