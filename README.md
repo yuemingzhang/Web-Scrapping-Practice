@@ -16,5 +16,7 @@ Extrat these information from each book's html page: overall rating, number of r
 
 #### Step 3:
 
-Data wrangling
+Wrangle and Analyze data.
 
+## Goal
+To practice and master web scrapping and data wrangling skills, and apply it to goodreads.com book list and create my customized book list to read.
